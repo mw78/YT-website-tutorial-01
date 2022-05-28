@@ -4,3 +4,4 @@ Randomly picked YT website tutorial-01 going back to basics - simple HTML & CSS 
 Practicing:
 - shadow under image
 - animation on image (-webkit)
+- making website responsive without the use of bootstrap
