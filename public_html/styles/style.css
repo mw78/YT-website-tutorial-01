@@ -1,0 +1,82 @@
+/* removing all padding, margin and set box-sizing for all images*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* insert link for css stylesheet in body, taken from google fonts*/
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    width: 80%; /*90% width leaves a 10% margin for the navbar!*/
+    margin: auto; /*margin: auto aligns navbar in center*/
+    height: 10vh; /*makes navbar bigger in height*/
+    align-items: center; /*moves all items in the center of 10vh header*/
+}
+
+.logo-container,.nav-links,.cart {
+    display: flex; /*aligns the words next to each other/ puts them in one line*/
+}
+
+.logo-container {
+    flex: 1; /*flex: 1 takes up all the available space to the right*/
+}
+
+.logo {
+    font-weight: 400;
+    margin: 5px; /*gives it some space between the dots and text*/
+}
+
+/*nav class is a child of .logo-container and needs no dot in front*/
+nav {
+    flex: 2; /*makes the middle one twice as long as the rest*/
+}
+
+.nav-links {
+    justify-content: space-around; /*adds space around the text/content in middle section!*/
+    list-style: none; /*removes dots in list element!*/
+}
+
+.nav-link {
+    color: #5f5f79;
+    font-size: 18px;
+    text-decoration: none; /*removes the underline decoration on the links in anchor class=a!*/
+}
+
+.cart {
+    flex: 1; /*makes everything equal in length*/
+    justify-content: flex-end; /*moves cart symbol to the end of flex container - you can adjust the positioning some more by playing with width: changed it from 90% to 80%*/
+}
+
+.presentation {
+    display: flex; /*moves each content to the opposite side*/
+    width: 80%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction {
+    flex: 1;
+}
+
+.intro-text h1 {
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right, #262626, #f2f3f4); /*creates a gradient background from dark/left to light/right*/
+    -webkit-background-clip: text; /*clipping background to text*/
+    -webkit-text-fill-color: transparent; /*fills the text with gradient instead of background*/
+
+}
+
+.cover {
+    flex: 1;
+}
+
+.cover img {
+    height: 60vh;
+}
